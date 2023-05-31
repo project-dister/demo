@@ -1,0 +1,16 @@
+.chatAppContainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 710px;
+}
+
+.chatApp {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  @media (min-width: 1024px) {
+    flex-direction: row;
+  }
+}

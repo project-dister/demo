@@ -1,0 +1,125 @@
+.editOffer {
+  color: #fafafa;
+  padding: 20px;
+  border-radius: 15px;
+
+  .tutorial {
+    border: 1px solid #fe6700;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-weight: 300;
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+  .inputField {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid #a3a3a3;
+    padding: 10px;
+    resize: none;
+
+    &::placeholder {
+      color: #a3a3a3;
+      font-weight: 300;
+    }
+
+    &:focus {
+      border-color: #fafafa;
+
+      &::placeholder {
+        color: #fafafa;
+      }
+    }
+  }
+
+  .searchTagInputField {
+    background-color: transparent;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid #a3a3a3;
+    padding: 5px;
+  }
+
+  .tag {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fe6700;
+    color: #fafafa;
+    padding: 5px 7px;
+    border-radius: 7px;
+    margin-right: 10px;
+  }
+
+  .searchTagInput {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: #fafafa;
+    padding: 5px;
+    border-radius: 5px;
+    margin-right: 7px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+  }
+
+  .removeTag {
+    margin-left: 4px;
+    cursor: pointer;
+  }
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 16px;
+}
+
+.newOfferBtn {
+  border: 1px solid #fe6700;
+
+  border-radius: 10px;
+  padding: 3px 10px;
+  margin-left: 10px;
+  font-size: 16px;
+  cursor: pointer;
+
+  &:hover {
+    border-color: #67b580;
+  }
+}
+
+.saveButton,
+.deleteButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: 1px solid #fe6700;
+  color: white;
+  border-radius: 10px;
+  padding: 8px 16px;
+  margin-left: 10px;
+  font-size: 16px;
+  cursor: pointer;
+
+  &:hover {
+    border-color: #67b580;
+  }
+}
+
+.deleteButton {
+  &:hover {
+    border-color: #FF3232;
+  }
+}
+
+.icon {
+  margin-right: 8px;
+}

@@ -1,0 +1,31 @@
+.dashboard {
+  position: relative;
+  max-width: 1350px;
+  margin: 30px 20px;
+  padding: 0 20px;
+  min-height: 100vh;
+
+  .cardsContainer {
+    margin-left: 80px;
+  }
+
+  .hideShow {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 10px;
+    padding: 10px;
+    background: #fe6700;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  @media (max-width: 767px) {
+    padding: 0;
+    margin: 10px 5px;
+    .cardsContainer {
+      padding-top: 55px;
+      margin-left: 0;
+    }
+  }
+}

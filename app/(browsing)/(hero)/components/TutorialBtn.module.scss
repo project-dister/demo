@@ -1,0 +1,46 @@
+.actionButton {
+  display: flex;
+  align-items: center;
+  margin-top: 45px;
+  padding: 10px 25px;
+  border: 1.5px solid #fe6700;
+
+  border-radius: 10px;
+  background-color: #141414;
+  color: #fafafa;
+  font-size: 1.2rem;
+  font-weight: 400;
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+  letter-spacing: 4px;
+
+  .actionButtonIcon {
+    margin-right: 7px;
+    width: 15px;
+  }
+
+  &:hover {
+    border-color: #141414;
+  }
+
+  @media screen and (max-width: 767px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px 20px;
+    font-size: 1rem;
+
+    .actionButtonIcon {
+      margin-right: 5px;
+      width: 13px;
+    }
+  }
+
+  @media screen and (max-width: 379px) {
+    margin-top: 50px;
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+}

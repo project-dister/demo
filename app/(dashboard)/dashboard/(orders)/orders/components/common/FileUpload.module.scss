@@ -1,0 +1,81 @@
+.fileUpload {
+  max-width: 400px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.dropZone {
+  padding: 30px;
+  text-align: center;
+  border-color: #999;
+  border-radius: 15px;
+  border-style: dashed;
+  border-width: 1px;
+  text-align: center;
+}
+
+.selectFromComputer {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+.fileList {
+  max-height: 200px;
+  overflow-y: auto;
+  margin-top: 1rem;
+}
+
+.fileCard {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  margin-bottom: 0.5rem;
+  background-color: #1f1f1f;
+}
+
+.deleteButton {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.fileName {
+  font-size: 0.9rem;
+  font-weight: 300;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.fileSize {
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.8);
+  margin-right: 10px;
+}
+
+.fileInfo {
+  display: flex;
+  align-items: center;
+}
+
+.deliverUpload {
+  border: 1px solid #fe6700;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+
+  .deliverUploadIcon {
+    font-size: 20px;
+    color: #fe6700;
+    margin-left: 10px;
+  }
+}

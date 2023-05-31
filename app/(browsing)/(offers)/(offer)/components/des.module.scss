@@ -1,0 +1,26 @@
+.description {
+  .offerTitle {
+    margin-top: 20px;
+    font-size: 2.2rem;
+    font-weight: 500;
+    color: #fafafa;
+    margin-bottom: 0.5rem;
+  }
+
+  .offerDescription {
+    margin-top: 10px;
+    font-size: 1.3rem;
+    color: #fafafa;
+    line-height: 1.5;
+  }
+
+  @media (max-width: 468px) {
+    .offerTitle {
+      font-size: 1.8rem;
+    }
+
+    .offerDescription {
+      font-size: 1rem;
+    }
+  }
+}

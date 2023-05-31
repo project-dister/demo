@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  // background: linear-gradient(315deg, #030202 0%, #343434 100%);
+  background-color: #1f1f1f;
+}
+
+.cardBg {
+  background: linear-gradient(315deg, #030202 0%, #343434 100%);
+}
+
+.Bg {
+  // background: linear-gradient(315deg, #030202 0%, #343434 100%);
+}
+
+.lightWhiteText {
+  color: #fafafa;
+}
+
+.orangeText {
+  color: #fe6700;
+}
+
+.grayBg {
+  background-color: #1f1f1f;
+}
+
+.grayText {
+  color: #1f1f1f;
+}
+
+.Completed {
+  color: #fafafa;
+  background-color: #67b580;
+  border-radius: 10px;
+}
+
+.Pending {
+  color: #fafafa;
+  background-color: #ffa421;
+  border-radius: 10px;
+}
+
+.Cancelled {
+  color: #fafafa;
+  background-color: #f44336;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+}
+
+::selection {
+  background-color: #fafafa;
+  color: #030202;
+}
+
+
+

@@ -1,0 +1,53 @@
+.switchesContainer {
+  width: 16rem;
+  line-height: 3rem;
+  position: relative;
+  display: flex;
+  background: #161616;
+  border-radius: 10px;
+  padding: 0;
+  transition: all 1s smooth;
+}
+
+.switchesContainer input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  z-index: 2;
+  cursor: pointer;
+  width: 50%;
+  height: 100%;
+}
+
+.switchesContainer label {
+  width: 50%;
+  text-align: center;
+
+  color: #fafafa;
+  z-index: 1;
+}
+
+.switchWrapper {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 50%;
+  transition: transform 0.3s cubic-bezier(0.77, 0, 0.175, 1);
+  z-index: 1;
+}
+
+.switch {
+  height: 100%;
+  background: #fafafa;
+  border-radius: 10px;
+}
+
+.switch div {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+}

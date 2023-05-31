@@ -1,0 +1,244 @@
+.user {
+  position: relative;
+  max-width: 1350px;
+  margin: 40px auto;
+  padding: 0 2rem;
+
+  .userCard {
+    position: relative;
+    background-color: #1f1f1f;
+    border-radius: 20px;
+    height: 100%;
+    margin-bottom: 40px;
+
+    .socials {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 20px;
+
+      .socialIcon {
+        font-size: 25px;
+        color: #1f1f1f;
+        width: 50px;
+        height: 50px;
+        margin-top: 10px;
+        border-radius: 10px;
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+
+    .topRow {
+      position: relative;
+      display: flex;
+
+      .profilePic {
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        margin: 20px;
+
+        img {
+          border-radius: 20px;
+        }
+      }
+
+      .userDetails {
+        position: relative;
+        margin: 38px 0 0 250px;
+        height: 150px;
+
+        .userName {
+          font-size: 2rem;
+          font-weight: 400;
+          color: #fff;
+        }
+
+        .occupation {
+          font-weight: 300;
+          font-size: 1.1rem;
+          color: #fe6700;
+        }
+
+        .labelText {
+          font-size: 0.8rem;
+          color: #989898;
+          font-weight: 300;
+        }
+
+        .localTime {
+          position: absolute;
+          bottom: 0;
+          font-size: 1.1rem;
+          color: #fff;
+        }
+
+        .rating {
+          position: absolute;
+          bottom: 0;
+          padding-left: 120px;
+          font-size: 1.1rem;
+          color: #fff;
+
+          p {
+            svg {
+              margin-right: 5px;
+            }
+            span {
+              margin-left: 5px;
+            }
+            display: flex;
+
+            align-items: center;
+          }
+        }
+      }
+    }
+
+    @media screen and (max-width: 1300px) {
+      .topRow {
+        .profilePic {
+          width: 180px;
+          height: 180px;
+        }
+        .userDetails {
+          margin: 38px 0 0 220px;
+          .userName {
+            font-size: 1.8rem;
+          }
+          .occupation {
+            font-size: 1rem;
+          }
+          .labelText {
+            font-size: 0.7rem;
+          }
+          .localTime {
+            font-size: 1rem;
+          }
+          .rating {
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+
+    @media screen and (max-width: 767px) {
+      .socials {
+        .socialIcon {
+          font-size: 20px;
+          width: 40px;
+          height: 40px;
+          margin-top: 7px;
+        }
+      }
+      .topRow {
+        .profilePic {
+          width: 150px;
+          height: 150px;
+        }
+
+        .userDetails {
+          margin: 38px 0 0 195px;
+          height: 115px;
+          .userName {
+            font-size: 1.6rem;
+          }
+          .occupation {
+            font-size: 0.9rem;
+          }
+          .labelText {
+            font-size: 0.6rem;
+          }
+          .localTime {
+            font-size: 0.9rem;
+          }
+          .rating {
+            font-size: 0.9rem;
+          }
+        }
+      }
+    }
+
+    @media screen and (max-width: 480px) {
+      .topRow {
+        .profilePic {
+          width: 120px;
+          height: 120px;
+        }
+
+        .userDetails {
+          margin: 38px 0 0 165px;
+          height: 90px;
+          width: 200px;
+          .userName {
+            font-size: 1.4rem;
+          }
+          .occupation {
+            font-size: 0.8rem;
+          }
+          .labelText {
+            font-size: 0.5rem;
+          }
+          .localTime {
+            font-size: 0.8rem;
+          }
+          .rating {
+            font-size: 0.8rem;
+          }
+        }
+      }
+    }
+
+    @media screen and (max-width: 400px) {
+      .socials {
+        .socialIcon {
+          font-size: 18px;
+          width: 35px;
+          height: 35px;
+          margin-top: 7px;
+        }
+      }
+
+      .topRow {
+        .profilePic {
+          width: 100px;
+          height: 100px;
+
+          img {
+            border-radius: 10px;
+          }
+        }
+
+        .userDetails {
+          margin: 32px 0 0 145px;
+          height: 80px;
+          width: 180px;
+          .userName {
+            font-size: 1.2rem;
+          }
+          .occupation {
+            font-size: 0.7rem;
+          }
+          .labelText {
+            font-size: 0.4rem;
+          }
+          .localTime {
+            font-size: 0.7rem;
+          }
+          .rating {
+            font-size: 0.7rem;
+            padding-left: 70px;
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    max-width: 600px;
+    padding: 0 1rem;
+  }
+}

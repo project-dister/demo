@@ -1,0 +1,178 @@
+.messageInput {
+  display: flex;
+  padding: 1rem;
+
+  ::placeholder {
+    color: #fafafa;
+  }
+
+  input {
+    border-radius: 10px;
+    background-color: #1f1f20;
+    border: 1px solid #1f1f20;
+    color: #fafafa;
+
+    &:focus {
+      border: 1px solid #fafafa;
+    }
+  }
+}
+
+.input {
+  flex-grow: 1;
+  outline: none;
+}
+
+.sendButton {
+  outline: none;
+
+  svg {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.sendOfferButton {
+  border: 1px solid #fe6700;
+  color: #fafafa;
+  border-radius: 10px;
+  padding: 0 10px;
+}
+
+// MessageInput.module.scss
+.offerPopup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  max-width: 400px;
+  padding: 30px;
+  border-radius: 15px;
+  z-index: 999;
+  max-height: 70vh;
+  overflow-y: auto;
+
+  .offerCard {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 15px;
+    cursor: pointer;
+    border: 1px solid #f3f3f373;
+    color: #f3f3f3;
+    transition: all 0.1s;
+
+    &:hover {
+      border: 1px solid #fe6700;
+    }
+
+    .thumbnail {
+      width: 50px;
+      height: 50px;
+      border-radius: 5px;
+      object-fit: cover;
+    }
+
+    .info {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      .title {
+        font-weight: 500;
+        font-size: 0.9rem;
+      }
+      .details {
+        font-size: 0.8rem;
+      }
+    }
+  }
+
+  .selectedOffer {
+    background-color: #f3f3f3;
+    color: #1f1f20;
+  }
+
+  .customTitle {
+    margin: 20px 0;
+    color: #fafafa;
+    font-weight: 500;
+    font-size: 0.9rem;
+  }
+
+  .bottomRow {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 10px;
+    margin-top: 20px;
+    .customInputItem {
+      border-radius: 10px;
+      width: 100px;
+      padding: 5px 10px;
+      outline: none;
+      background-color: transparent;
+      border: 1px solid #f3f3f373;
+      color: #fafafa;
+
+      &:placeholder {
+        color: #fafafa;
+      }
+      &:focus {
+        border: 1px solid #fe6700;
+      }
+    }
+
+    .sendButton {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-color: #fe6700;
+      background: #fe6700;
+      transition: 0.1s all;
+
+      svg {
+        width: 15px;
+        height: 15px;
+        margin-left: 5px;
+      }
+
+      &:hover {
+        background: transparent;
+      }
+    }
+  }
+
+  .closeButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: 0.1s all;
+
+    svg {
+      width: 20px;
+      height: 20px;
+    }
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
+
+// Add a class for the overlay
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(10px);
+  z-index: 998;
+}

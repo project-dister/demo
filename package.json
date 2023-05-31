@@ -1,0 +1,37 @@
+{
+  "name": "dister",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@types/node": "18.15.3",
+    "@types/react": "18.0.28",
+    "@types/react-dom": "18.0.11",
+    "ethers": "^6.4.0",
+    "firebase": "^9.21.0",
+    "firebase-admin": "^11.8.0",
+    "jszip": "^3.10.1",
+    "moment-timezone": "^0.5.43",
+    "next": "^13.4.3",
+    "react": "^18.2.0",
+    "react-beautiful-dnd": "^13.1.1",
+    "react-dom": "^18.2.0",
+    "react-hot-toast": "^2.4.1",
+    "react-icons": "^4.8.0",
+    "typescript": "5.0.2"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.194",
+    "@types/react-beautiful-dnd": "^13.1.4",
+    "@types/react-highlight-words": "^0.16.4",
+    "autoprefixer": "^10.4.14",
+    "postcss": "^8.4.21",
+    "sass": "^1.59.3",
+    "tailwindcss": "^3.2.7"
+  }
+}

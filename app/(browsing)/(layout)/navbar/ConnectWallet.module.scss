@@ -1,0 +1,45 @@
+.popupContainer {
+  border-radius: 15px;
+
+  .blurBackground {
+    backdrop-filter: blur(10px);
+
+    .popupCard {
+      width: 500px;
+      margin: 20px;
+      padding: 20px 50px;
+      border-radius: 25px;
+
+      .closeButton {
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin-top: 20px;
+        margin-right: 28px;
+        color: #fff;
+        font-size: 1.5rem;
+        cursor: pointer;
+        transition: all 0.1s ease-in-out;
+
+        &:hover {
+          color: #fe6700;
+        }
+      }
+
+      .title {
+        font-size: 34px;
+        font-weight: 600;
+        color: #fff;
+        text-align: center;
+        margin: 25px 0;
+        padding-bottom: 20px;
+      }
+
+      // 767px
+      @media screen and (max-width: 47.5em) {
+        width: 100%;
+        padding: 20px 20px;
+      }
+    }
+  }
+}

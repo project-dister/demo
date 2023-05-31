@@ -1,0 +1,58 @@
+.nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: 20px;
+
+  .navBg {
+    border-radius: 15px;
+    text-align: left;
+
+    .navArrowIcon {
+      padding-left: 10px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      width: 30px;
+      height: 30px;
+      cursor: pointer;
+      transition: 0.1s ease-in-out;
+    }
+
+    .itemTextContainer {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      margin-left: 10px;
+      margin-right: 10px;
+
+      .itemText {
+        color: #fafafa;
+        font-size: 20px;
+        font-weight: 500;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: 0.1s ease-in-out;
+
+        svg {
+          width: 30px;
+          height: 30px;
+        }
+
+        &:hover {
+          background-color: #fafafa;
+          color: #1f1f1f;
+        }
+      }
+
+      .navItem {
+        background-color: #fafafa;
+        color: #1f1f1f;
+      }
+    }
+  }
+
+  @media (max-width: 767px) {
+    .nav {
+      display: none;
+    }
+  }
+}

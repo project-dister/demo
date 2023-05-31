@@ -1,0 +1,74 @@
+@keyframes slideIn {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideOut {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.bigCardWrapper {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+  z-index: 100;
+
+  .bigCard {
+    position: relative;
+    width: 400px;
+    height: 100%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    padding-top: 15px;
+    position: relative;
+    animation: slideIn 0.1s ease-out;
+    overflow-y: auto;
+
+    &.closing {
+      animation: slideOut 0.1s ease-out forwards;
+    }
+
+    .closeButton {
+      svg {
+        width: 35px;
+        height: 35px;
+      }
+    }
+
+    // 500px media query
+    @media (max-width: 500px) {
+      width: 100%;
+      padding: 20px;
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+  }
+  .thumbnail {
+    width: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 15px;
+    object-fit: cover;
+    margin-bottom: 20px;
+    background-color: #1f1f1f;
+  }
+}

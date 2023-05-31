@@ -1,0 +1,146 @@
+.chatMessagesContainer {
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+.chatMessages {
+  flex-grow: 1;
+  padding: 1rem;
+  overflow-y: auto;
+}
+
+.message {
+  display: flex;
+  align-items: flex-start;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  // max-width: 80%;
+
+  // @media (min-width: 950px) {
+  //   max-width: 60%;
+  // }
+}
+
+.avatar {
+  border-radius: 10px;
+}
+
+.self {
+  justify-content: flex-end;
+  margin-left: auto;
+
+  .avatar {
+    order: 1;
+    margin-right: 0;
+    margin-left: 0.5rem;
+  }
+
+  .messageBox {
+    background-color: #fe6700;
+    word-wrap: break-word;
+    max-width: 100%;
+    padding: 8px;
+    color: #fafafa;
+    border-radius: 10px 0 10px 10px;
+  }
+}
+
+.other {
+  justify-content: flex-start;
+  margin-right: auto;
+
+  .avatar {
+    margin-right: 0.5rem;
+  }
+
+  .messageBox {
+    background-color: #1f1f20;
+    word-wrap: break-word;
+    max-width: 100%;
+    padding: 8px;
+    color: #fafafa;
+    border-radius: 0 10px 10px 10px;
+  }
+}
+
+.offerMessageBox {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+
+  word-wrap: break-word;
+  max-width: 100%;
+  padding: 8px;
+  color: #fafafa;
+  border-radius: 10px;
+
+  .offerImageContainer {
+    flex: 0 0 100%; // Takes 100% width on smaller screens
+    margin-right: 0.5rem;
+
+    @media (min-width: 576px) {
+      // Switch to side-by-side layout on larger screens
+      flex: 0 0 auto;
+    }
+
+    .offerImage {
+      background-color: #45a049;
+      width: 100px;
+      height: 100px;
+      aspect-ratio: 1/1;
+      border-radius: 10px;
+    }
+  }
+
+  .offerDetails {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-basis: 0;
+
+    .offerTitle {
+      color: #fe6700;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .offerPriceAndDelivery {
+      color: #fafafa;
+    }
+
+    .offerButtons {
+      display: flex;
+      justify-content: left;
+
+      .acceptButton {
+        padding: 3px 8px;
+        border: none;
+        border-radius: 5px;
+        background-color: #4caf50; /* Green */
+        color: white;
+        cursor: pointer;
+
+        &:hover {
+          background-color: #45a049; /* Darker green */
+        }
+      }
+
+      .rejectButton {
+        padding: 3px 8px;
+        margin-left: 5px;
+        border: none;
+        border-radius: 5px;
+        background-color: #f44336; /* Red */
+        color: white;
+        cursor: pointer;
+
+        &:hover {
+          background-color: #da190b; /* Darker red */
+        }
+      }
+    }
+  }
+}

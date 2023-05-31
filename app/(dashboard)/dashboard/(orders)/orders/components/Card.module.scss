@@ -1,0 +1,50 @@
+.cardWrapper {
+  border-radius: 15px;
+  overflow: hidden;
+  display: inline-block;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+
+    .image {
+      width: 60px;
+      height: 60px;
+      border-radius: 10px;
+      object-fit: cover;
+      margin-right: 20px;
+    }
+
+    .title {
+      font-weight: 400;
+      font-size: 1.125rem;
+      flex-grow: 1;
+    }
+
+    .icon {
+      font-size: 1.25rem;
+    }
+  }
+
+  .content {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    flex-grow: 1;
+
+    .username {
+      font-size: 15px;
+      padding: 5px 10px;
+      padding-left: 0;
+    }
+  }
+}

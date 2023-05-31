@@ -1,0 +1,370 @@
+.offers {
+  position: relative;
+  max-width: 1350px;
+  margin: 0 auto;
+  padding: 70px 1rem;
+}
+
+.card {
+  position: relative;
+  width: 300px;
+  height: 380px;
+  background: linear-gradient(315deg, #030202 0%, #343434 100%);
+  border-radius: 20px;
+  overflow: hidden;
+  margin: 0 auto;
+  cursor: pointer;
+
+  .shortTitle {
+    font-size: 22px;
+    font-weight: 400;
+    color: #ffffff;
+    letter-spacing: 1px;
+    margin-top: -5px;
+    margin-left: 17.5px;
+  }
+
+  .imgBx img {
+    margin: 17.5px;
+    height: 265px;
+    width: 265px;
+
+    border-radius: 15px;
+  }
+
+  .contentBx {
+    background: linear-gradient(315deg, #030202 0%, #2d2d2d 120%);
+    position: absolute;
+    bottom: 0;
+    width: 265px;
+    height: 100px;
+    text-align: left;
+    transition: 0.1s;
+    margin-left: 17.5px;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  &:hover .contentBx {
+    height: 210px;
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0.1s;
+  }
+
+  .contentBx h2 {
+    margin-top: 10px;
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 1.2;
+    color: #ffffff;
+  }
+
+  .popupContainer {
+    position: absolute;
+    bottom: 55px;
+    left: 0;
+
+    .startsAt {
+      font-size: 14px;
+      font-weight: 300;
+      color: #e4e4e4;
+      margin-bottom: 10px;
+    }
+
+    .infoContainer {
+      display: flex;
+      flex-direction: row;
+      color: #fff;
+
+      .price {
+        border-bottom: 1px solid #fe6700;
+
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+        border-radius: 10px;
+        padding: 10px 20px;
+        font-weight: 400;
+        font-size: 16px;
+      }
+
+      .deliveryDate {
+        margin-left: 20px;
+        border-bottom: 1px solid #fe6700;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+        border-radius: 10px;
+        padding: 10px 20px;
+        font-weight: 400;
+        font-size: 16px;
+      }
+    }
+  }
+
+  .author {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 17.5px;
+    color: #fff;
+    z-index: 1;
+
+    &:hover {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+
+  .rating {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 17.5px;
+    color: #c1c1c1;
+    z-index: 1;
+    font-weight: 200;
+
+    svg {
+      margin-right: 5px;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    max-width: 600px;
+    width: 100%;
+    height: 150px;
+
+    .shortTitle {
+      display: none;
+    }
+
+    .imgBx img {
+      height: 125px;
+      width: 125px;
+      margin: 12.5px;
+    }
+
+    .contentBx {
+      height: 100%;
+      width: 60%;
+      opacity: 1;
+      visibility: visible;
+      left: 135px;
+      background: transparent;
+    }
+
+    &:hover .contentBx {
+      height: 100%;
+    }
+
+    .contentBx h2 {
+      font-size: 18px;
+    }
+
+    .popupContainer {
+      bottom: 0;
+      left: 0;
+      width: 100%;
+
+      .startsAt {
+        font-size: 12px;
+        margin-bottom: 5px;
+      }
+
+      .infoContainer {
+        margin-bottom: 12.5px;
+
+        .price {
+          border-radius: 7px;
+          padding: 5px 10px;
+          font-weight: 500;
+          font-size: 14px;
+        }
+
+        .deliveryDate {
+          margin-left: 10px;
+          border-radius: 7px;
+          padding: 5px 10px;
+          font-weight: 500;
+          font-size: 14px;
+        }
+      }
+    }
+
+    .author {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    height: 125px;
+
+    .imgBx img {
+      height: 105.5px;
+      width: 105.5px;
+      margin: 10px;
+      border-radius: 12px;
+    }
+
+    .contentBx {
+      width: 55%;
+      opacity: 1;
+      visibility: visible;
+      left: 107px;
+    }
+
+    .contentBx h2 {
+      font-size: 15px;
+    }
+
+    .popupContainer {
+      .startsAt {
+        font-size: 11px;
+        margin-bottom: 5px;
+      }
+
+      .infoContainer {
+        display: flex;
+        flex-direction: row;
+        color: #fff;
+        margin-bottom: 12.5px;
+
+        .price {
+          border-radius: 7px;
+          padding: 5px 10px;
+
+          font-size: 12px;
+        }
+
+        .deliveryDate {
+          margin-left: 10px;
+          border-radius: 7px;
+          padding: 5px 10px;
+
+          font-size: 12px;
+        }
+      }
+    }
+
+    .author {
+      font-size: 13px;
+      bottom: 9px;
+      margin: 0;
+      padding: 0;
+      left: 152px;
+    }
+
+    .rating {
+      font-size: 12px;
+    }
+  }
+}
+
+.responsiveCard {
+  background: linear-gradient(315deg, #030202 0%, #343434 100%);
+  position: relative;
+  max-width: 600px;
+  width: 100%;
+  height: 150px;
+
+  border-radius: 20px;
+  overflow: hidden;
+  margin: 0 auto;
+  cursor: pointer;
+
+  .imgBx img {
+    height: 125px;
+    width: 125px;
+    margin: 12.5px;
+    border-radius: 10px;
+  }
+
+  .shortTitle {
+    display: none;
+  }
+
+  .contentBx {
+    position: absolute;
+    bottom: 0;
+    left: 155px;
+    height: 100%;
+    width: 60%;
+    text-align: left;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .contentBx h2 {
+    margin-top: 10px;
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 1.2;
+    color: #ffffff;
+  }
+
+  .popupContainer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+
+    .startsAt {
+      font-size: 12px;
+      font-weight: 300;
+      color: #e4e4e4;
+      margin-bottom: 5px;
+    }
+
+    .infoContainer {
+      display: flex;
+      flex-direction: row;
+      color: #fff;
+      margin-bottom: 12.5px;
+
+      .price {
+        border-bottom: 1px solid #fe6700;
+
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+        border-radius: 10px;
+        padding: 10px 20px;
+        font-weight: 400;
+        font-size: 16px;
+      }
+
+      .deliveryDate {
+        margin-left: 20px;
+
+        border-bottom: 1px solid #fe6700;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+        border-radius: 10px;
+        padding: 10px 20px;
+        font-weight: 400;
+        font-size: 16px;
+      }
+    }
+  }
+
+  .author {
+    display: none;
+  }
+
+  .rating {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 17.5px;
+    color: #c1c1c1;
+    z-index: 1;
+    font-weight: 200;
+
+    svg {
+      margin-right: 5px;
+    }
+  }
+}
