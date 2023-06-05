@@ -4,7 +4,7 @@ import { FaPlay } from "react-icons/fa";
 
 export default function TutorialBtn() {
   return (
-    <Link href="/tutorials">
+    <Link href="/tutorial">
       <button className={styles.actionButton}>
         <FaPlay className={styles.actionButtonIcon} />
         Tutorials
